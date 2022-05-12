@@ -1,0 +1,90 @@
+.FPackContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.FPackContainer.active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.FPackContainer .AboutMain {
+  padding: 100px 0;
+  width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+.FPackContainer .AboutMain .Left {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.FPackContainer .AboutMain .Left .Title {
+  font-size: 35px;
+  text-align: center;
+  width: 100%;
+  color: #e02027;
+  font-weight: 100;
+  font-family: 'Great Vibes', cursive;
+}
+
+.FPackContainer .AboutMain .Left .Description {
+  color: #565656;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.FPackContainer .AboutMain .Left .AboutButton {
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: #e02027;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.FPackContainer .AboutMain .Right {
+  width: 400px;
+}
+
+.FPackContainer .AboutMain .Right img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=FamilyPack.css.map */

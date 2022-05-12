@@ -1,0 +1,51 @@
+.NavBarContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    .NavBarMain{
+        width: 1140px;
+        height: 100%;
+        display: flex;
+
+        .Logo{
+            min-width: 190px;
+            .logoImage{
+                height: 100%;
+            }
+        }
+        .Menu{
+            width: inherit;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .NavOnlineOrderButton{
+                padding: 8px 20px;
+                font-size: 16px;
+                background-color: #e02027;
+                color: #fff;
+                font-weight: bold;
+                border: none;
+                outline: none;
+            }
+            .NavButton{
+                height: 80%;
+                padding: 0 15px;
+                font-size: 14px;
+                white-space: nowrap;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                font-weight: bold;
+                color: #565656;
+            }
+        }
+    }
+}

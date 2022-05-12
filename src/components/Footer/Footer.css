@@ -1,0 +1,61 @@
+.FooterContainer {
+  background-color: #f1f1f1;
+  padding: 60px 0;
+  padding-bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.FooterContainer .FooterMain {
+  width: 1140px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.FooterContainer .FooterMain .SectionHeader {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.FooterContainer .FooterMain .SectionDetail {
+  text-align: left;
+  margin-top: 30px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.FooterContainer .FooterMain .SectionDetail a {
+  text-decoration: none;
+  color: #156fac;
+}
+
+.FooterContainer .FooterMain .SectionDetail p {
+  padding: 3px 0;
+}
+
+.FooterContainer .CopyRight {
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: #e02027;
+  width: 100%;
+  color: #fff;
+}
+
+.bd {
+  border: 1px solid #000;
+}
+/*# sourceMappingURL=Footer.css.map */

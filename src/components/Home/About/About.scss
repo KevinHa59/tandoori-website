@@ -1,0 +1,60 @@
+.HomeAboutContainer{
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.5s;
+    &.active{
+        visibility: visible;
+        opacity: 1;
+        transition: ease-in-out 0.5s;
+    }
+    .AboutMain{
+        padding: 100px 0;
+        width: 1140px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        .Left{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            .Title{
+                font-size: 35px;
+                text-align: left;
+                width: 100%;
+                    color: #e02027;
+                font-weight: 100;
+                 font-family: 'Great Vibes', cursive;
+            }
+            .Description{
+                color: #565656;
+                font-size: 14px;
+                line-height: 1.4;
+                text-align: left;
+            }
+            .AboutButton{
+                padding: 8px 20px;
+                font-size: 16px;
+                background-color: #e02027;
+                color: #fff;
+                font-weight: bold;
+                border: none;
+                outline: none;
+                width: max-content;
+            }
+        }
+        .Right{
+
+
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

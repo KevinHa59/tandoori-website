@@ -1,0 +1,110 @@
+.PopDishContainer {
+  background-color: #f1f1f1;
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.PopDishContainer.active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.PopDishContainer .PopMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1140px;
+}
+
+.PopDishContainer .PopMain .Title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 35px;
+  width: 100%;
+  color: #e02027;
+  font-weight: 100;
+}
+
+.PopDishContainer .PopMain .PopDishPics {
+  margin-top: 50px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.PopDishContainer .PopMain .PopDishPics .PopDishItem {
+  background-color: #fff;
+  padding: 40px 20px 50px 20px;
+}
+
+.PopDishContainer .PopMain .PopDishPics .PopDishItem .popImage {
+  width: 90%;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.PopDishContainer .PopMain .PopDishPics .PopDishItem .PopDishItemTitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 40px;
+  color: #565656;
+}
+
+.PopDishContainer .PopMain .PopDishPics .PopDishItem .PopDishItemCost {
+  color: #e02027;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.PopDishContainer .PopMain .PopDishPics .PopDishItem:hover .popImage {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.IconDesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Line {
+  width: 50px;
+  height: 2px;
+  background-color: #e02027;
+}
+
+.Icon {
+  font-size: 30px;
+  color: #e02027;
+}
+/*# sourceMappingURL=PopularDishes.css.map */

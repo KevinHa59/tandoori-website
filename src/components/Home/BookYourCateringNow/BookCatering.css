@@ -1,0 +1,158 @@
+.BookCateContainer {
+  background-color: #f1f1f1;
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.BookCateContainer.active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.BookCateContainer .BookCateMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1140px;
+}
+
+.BookCateContainer .BookCateMain .Title {
+  font-size: 35px;
+  width: 100%;
+  color: #e02027;
+  font-weight: 100;
+  font-family: 'Great Vibes', cursive;
+}
+
+.BookCateContainer .PopForm {
+  margin-top: 70px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.BookCateContainer .PopForm .BookCateForm {
+  width: 1140px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+}
+
+.BookCateContainer .PopForm .BookCateForm .BookCateInput {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  bottom: 40px;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.BookCateContainer .PopForm .BookCateForm .BookCateInput .Title {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  color: #e02027;
+  font-weight: 100;
+  font-family: 'Great Vibes', cursive;
+}
+
+.BookCateContainer .PopForm .BookCateForm .BookCateInput .InputField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  padding-left: 40px;
+}
+
+.BookCateContainer .PopForm .BookCateForm .BookCateInput .InputField .Text {
+  width: 90%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+.BookCateContainer .PopForm .BookCateForm .BookCateInput .InputField .BookCateButton {
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: #e02027;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  width: 90%;
+  height: 45px;
+}
+
+.BookCateContainer .PopForm .BookCateForm .BookCateImage {
+  width: 700px;
+  height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.BGWhite {
+  background-color: #fff;
+}
+/*# sourceMappingURL=BookCatering.css.map */
