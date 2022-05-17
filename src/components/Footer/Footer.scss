@@ -1,11 +1,11 @@
+@import "../../styles/variable";
+@import '../../../styles/mixin';
+
 .FooterContainer{
     background-color: #f1f1f1;
     padding: 60px 0;
     padding-bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
     .FooterMain{
         width: 1140px;
         display: grid;
@@ -35,7 +35,7 @@
     .CopyRight{
         margin-top: 50px;
         padding: 20px 0;
-        background-color: #e02027;
+        background-color: $color_bg_red;
         width: 100%;
         color: #fff;
     }

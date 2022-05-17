@@ -1,15 +1,12 @@
 .OpenTableButton {
   margin-top: 5px;
   padding: 8px 20px;
-  font-size: 15px;
+  font-size: 16px;
   background-color: #e02027;
   color: #fff;
-  font-weight: 100;
+  font-weight: bold;
   border: none;
   outline: none;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   text-decoration: none;
 }
 

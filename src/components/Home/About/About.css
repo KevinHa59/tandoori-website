@@ -11,6 +11,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
 }
@@ -36,13 +40,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 20px;
 }
 
@@ -52,7 +59,7 @@
   width: 100%;
   color: #e02027;
   font-weight: 100;
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
 }
 
 .HomeAboutContainer .AboutMain .Left .Description {
@@ -70,9 +77,7 @@
   font-weight: bold;
   border: none;
   outline: none;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  text-decoration: none;
 }
 
 .HomeAboutContainer .AboutMain .Right img {

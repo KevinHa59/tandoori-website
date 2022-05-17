@@ -1,0 +1,24 @@
+@mixin flexCenter ($direction: '') {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin flexEnd () {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+@mixin button ($fontWeight: bold) {
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: $color_text_red;
+    color: #fff;
+    font-weight: $fontWeight;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}

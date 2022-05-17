@@ -1,0 +1,50 @@
+.MainBannerContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 281px;
+  overflow: hidden;
+}
+
+.MainBannerContainer .BannerPic {
+  width: 100%;
+}
+
+.MainBannerContainer .BannerDetail {
+  position: absolute;
+}
+
+.MainBannerContainer .BannerDetail .Title {
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+}
+
+.MainBannerContainer .BannerDetail .Link {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  font-style: italic;
+}
+
+.MainBannerContainer .BannerDetail .Link .HomeLink {
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 100;
+  color: #000;
+  font-style: normal;
+}
+
+.MainBannerContainer .BannerDetail .Link .PageName {
+  color: #e02027;
+  font-style: normal;
+}
+/*# sourceMappingURL=Banner.css.map */

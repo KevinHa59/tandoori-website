@@ -10,6 +10,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   overflow: hidden;
   position: relative;
 }
@@ -28,21 +32,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .BannerContainer .BannerMain .Welcome {
   font-size: 35px;
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
 }
 
 .BannerContainer .BannerMain .Slogan {
@@ -79,12 +83,13 @@
 
 .BannerContainer .BannerMain .BannerButton {
   margin-top: 20px;
-  padding: 10px 23px;
-  font-size: 14px;
+  padding: 8px 20px;
+  font-size: 16px;
   background-color: #e02027;
   color: #fff;
   font-weight: bold;
   border: none;
   outline: none;
+  text-decoration: none;
 }
 /*# sourceMappingURL=Banner.css.map */

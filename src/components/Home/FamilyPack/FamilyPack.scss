@@ -1,9 +1,9 @@
+@import '../../../styles/variable';
+@import '../../../styles/mixin';
 .FPackContainer{
     
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
     visibility: hidden;
     opacity: 0;
     transition: ease-in-out 0.5s;
@@ -15,28 +15,22 @@
     .AboutMain{
         padding: 100px 0;
         width: 1140px;
-        display: flex;
-        
+        @include flexCenter();
         gap: 50px;
-
         .Left{
             width: 100%;
   
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include flexCenter(column);
             gap: 20px;
             .Title{
                 font-size: 35px;
                 text-align: center;
                 width: 100%;
-                    color: #e02027;
+                color: $color_text_red;
                 font-weight: 100;
-                 font-family: 'Great Vibes', cursive;
+                 font-family: $font_family;
             }
             .Description{
-                color: #565656;
                 font-size: 14px;
                 line-height: 1.4;
                 text-align: center;
@@ -44,7 +38,7 @@
             .AboutButton{
                 padding: 8px 20px;
                 font-size: 16px;
-                background-color: #e02027;
+                background-color: $color_bg_red;
                 color: #fff;
                 font-weight: bold;
                 border: none;

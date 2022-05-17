@@ -1,11 +1,10 @@
-
+@import '../../../styles/variable';
+@import '../../../styles/mixin';
 
 .BannerContainer{
     width: 100%;
     height: 586px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter(row);
     overflow: hidden;
     position: relative;
 
@@ -19,13 +18,10 @@
         position: absolute;
         height: 100%;
         color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexCenter(column);
         .Welcome{
             font-size: 35px;
-            font-family: 'Great Vibes', cursive;
+            font-family: $font_family;
         }
         .Slogan{
             width: min-content;
@@ -40,7 +36,7 @@
                 transition: ease-in-out 0.3s;
                 overflow: hidden;
                 width: 0px;
-                color: #e02027;
+                color: $color_text_red;
     
                 &.active{
                     
@@ -56,13 +52,8 @@
         }
         .BannerButton{
             margin-top: 20px;
-            padding: 10px 23px;
-                font-size: 14px;
-                background-color: #e02027;
-                color: #fff;
-                font-weight: bold;
-                border: none;
-                outline: none;
+            @include button();
+
         }
     }
 }

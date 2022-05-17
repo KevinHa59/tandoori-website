@@ -1,10 +1,10 @@
+@import '../../../styles/variable';
+@import '../../../styles/mixin';
+
 .PopDishContainer{
     background-color: #f1f1f1;
     padding: 100px 0;
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
     visibility: hidden;
     opacity: 0;
     transition: ease-in-out 0.5s;
@@ -14,16 +14,13 @@
         transition: ease-in-out 0.5s;
     }
     .PopMain{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexCenter(column);
         width: 1140px;
         .Title{
-             font-family: 'Great Vibes', cursive;
+            font-family: $font_family;
             font-size: 35px;
             width: 100%;
-            color: #e02027;
+            color: $color_text_red;
             font-weight: 100;
         }
 
@@ -32,7 +29,6 @@
             width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            
             gap: 20px;
             .PopDishItem{
                 background-color: #fff;
@@ -49,7 +45,7 @@
                     color: #565656;
                 }
                 .PopDishItemCost{
-                    color: #e02027;
+                    color: $color_red;
                     font-size: 25px;
                     font-weight: bold;
                     margin-top: 10px;
@@ -64,15 +60,14 @@
     }
 }
 .IconDesign{
-    display: flex;
-    align-items: center;
+    @include flexCenter();
 }
 .Line{
     width: 50px;
     height: 2px;
-    background-color: #e02027;
+    background-color: $color_bg_red
 }
 .Icon{
     font-size: 30px;
-    color: #e02027;
+    color: $color_text_red;
 }   

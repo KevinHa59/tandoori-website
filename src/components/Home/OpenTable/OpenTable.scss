@@ -1,14 +1,9 @@
+@import '../../../styles/variable';
+@import '../../../styles/mixin';
 .OpenTableButton{
     margin-top: 5px;
-    padding: 8px 20px;
-                font-size: 15px;
-                background-color: #e02027;
-                color: #fff;
-                font-weight: 100;
-                border: none;
-                outline: none;
-                width: max-content;
-                text-decoration: none;
+    @include button();
+    
 }
 
 .BGWhite{
