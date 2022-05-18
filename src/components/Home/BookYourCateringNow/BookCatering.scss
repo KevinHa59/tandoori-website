@@ -64,7 +64,7 @@
                         padding: 0 20px;
                         font-size: 16px;
                         outline: none;
-
+                        border: 1px solid #c2c2c2;
 
                     }
                     .BookCateButton{
@@ -89,4 +89,48 @@
 
 .BGWhite{
     background-color: #fff;
+}
+.bdw{
+    border: 1px  solid rgb(255, 56, 56);
+}
+@media screen and (max-width: 768px){
+    .BookCateContainer{
+        padding: 50px 20px;
+        .BookCateMain{
+            width: 100%;
+        }
+        .PopForm{
+            .BookCateForm{
+                width: 100%;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+                .BookCateInput{
+                    width: 100%;
+                    left: 0;
+                    right: 0;
+                    .InputField{
+                        padding-left: 0;
+                        padding: 0 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .Text{
+                            width: 80%;
+                            
+                        }
+                    }
+                    z-index: 2;
+                }
+                .BookCateImage{
+                    width: auto;
+                    height: 500px;
+                    filter: opacity(0.4);
+                    z-index: 1;
+                }
+            }
+        }
+    }
 }

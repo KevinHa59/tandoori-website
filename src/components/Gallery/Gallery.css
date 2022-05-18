@@ -1,1 +1,82 @@
-/* No CSS *//*# sourceMappingURL=Gallery.css.map */
+.GalleryContainer {
+  padding: 100px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.GalleryContainer .Main {
+  max-width: 1140px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.GalleryContainer .Main .ImageContainer {
+  position: relative;
+}
+
+.GalleryContainer .Main .ImageContainer .Img {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.GalleryContainer .Main .ImageContainer .Img .hover {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.685);
+  right: 0;
+  height: 0px;
+  width: 0px;
+  top: 0;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e02027;
+  font-size: 30px;
+}
+
+.GalleryContainer .Main .ImageContainer .Img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.GalleryContainer .Main .ImageContainer .Img:hover .hover {
+  height: 50px;
+  width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .GalleryContainer {
+    padding: 50px 25px;
+  }
+  .GalleryContainer .Main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=Gallery.css.map */

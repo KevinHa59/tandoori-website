@@ -100,4 +100,13 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+  .FPackContainer .AboutMain .Right {
+    display: none;
+  }
+  .FPackContainer .AboutMain .Left {
+    padding: 0 25px;
+  }
+}
 /*# sourceMappingURL=FamilyPack.css.map */

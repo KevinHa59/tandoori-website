@@ -4,9 +4,9 @@ import { BsInstagram, BsFacebook } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <div className="FooterContainer">
-      <div className="FooterMain">
-        <div className="ContactUs">
+    <div className="FooterContainer ">
+      <div className="FooterMain ">
+        <div className="ContactUs ">
           <div className="SectionHeader">Contact US</div>
           <div className="SectionDetail">
             <p>Address: 4600 Chamberlain Lane</p>
@@ -17,7 +17,7 @@ export default function Footer() {
             <p>Phone:(502) 255-2590</p>
           </div>
         </div>
-        <div className="OpenHours">
+        <div className="OpenHours ">
           <div className="SectionHeader">Open Hours</div>
           <div className="SectionDetail">
             <strong>Sunday</strong>
@@ -65,7 +65,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="CopyRight">Copyright © 2021. All Rights Reserved</div>
+      <div className="CopyRight ">Copyright © 2021. All Rights Reserved</div>
     </div>
   );
 }

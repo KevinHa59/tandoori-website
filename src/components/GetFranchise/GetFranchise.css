@@ -1,1 +1,222 @@
-/* No CSS *//*# sourceMappingURL=GetFranchise.css.map */
+.GetFranchise {
+  background-color: #f1f1f1;
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.GetFranchise.active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.GetFranchise .BookCateMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1140px;
+}
+
+.GetFranchise .BookCateMain .Title {
+  font-size: 35px;
+  width: 100%;
+  color: #e02027;
+  font-weight: 100;
+  font-family: "Great Vibes", cursive;
+}
+
+.GetFranchise .PopForm {
+  margin-top: 70px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.GetFranchise .PopForm .BookCateForm {
+  width: 1140px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+}
+
+.GetFranchise .PopForm .BookCateForm .BookCateInput {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  bottom: 40px;
+  width: 500px;
+  gap: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.GetFranchise .PopForm .BookCateForm .BookCateInput .Title {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  color: #e02027;
+  font-weight: 100;
+  font-family: "Great Vibes", cursive;
+}
+
+.GetFranchise .PopForm .BookCateForm .BookCateInput .InputField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  padding-left: 40px;
+}
+
+.GetFranchise .PopForm .BookCateForm .BookCateInput .InputField .Text {
+  width: 90%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #c2c2c2;
+}
+
+.GetFranchise .PopForm .BookCateForm .BookCateInput .InputField .BookCateButton {
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: #e02027;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  padding: 8px 20px;
+  width: 90%;
+  height: 45px;
+}
+
+.GetFranchise .PopForm .BookCateForm .BookCateImage {
+  width: 700px;
+  height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.BGWhite {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .GetFranchise {
+    padding: 50px 20px;
+  }
+  .GetFranchise .BookCateMain {
+    width: 100%;
+  }
+  .GetFranchise .PopForm .BookCateForm {
+    width: 100%;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+  }
+  .GetFranchise .PopForm .BookCateForm .BookCateInput {
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .GetFranchise .PopForm .BookCateForm .BookCateInput .InputField {
+    padding-left: 0;
+    padding: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .GetFranchise .PopForm .BookCateForm .BookCateInput .InputField .Text {
+    width: 80%;
+  }
+  .GetFranchise .PopForm .BookCateForm .BookCateImage {
+    width: auto;
+    height: 500px;
+    -webkit-filter: opacity(0.4);
+            filter: opacity(0.4);
+    z-index: 1;
+  }
+}
+/*# sourceMappingURL=GetFranchise.css.map */

@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 5;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,6 +19,8 @@
       -ms-flex-direction: "";
           flex-direction: "";
   background-color: #fff;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .NavBarContainer .NavBarMain {
@@ -35,6 +37,10 @@
 
 .NavBarContainer .NavBarMain .Logo .logoImage {
   height: 100%;
+}
+
+.NavBarContainer .NavBarMain .HamButton {
+  display: none;
 }
 
 .NavBarContainer .NavBarMain .Menu {
@@ -78,5 +84,97 @@
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.NavBarContainer .NavBarMain .Menu .NavButton:hover {
+  color: #e02027;
+}
+
+.NavBarContainer .NavBarMain .Menu .NavButton:focus {
+  color: #e02027;
+}
+
+@media screen and (max-width: 768px) {
+  .NavBarContainer {
+    height: 80px;
+  }
+  .NavBarContainer .NavBarMain {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .NavBarContainer .NavBarMain .Logo .logoImage {
+    height: 80px;
+  }
+  .NavBarContainer .NavBarMain .HamButton {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 30px;
+    color: #e02027;
+  }
+  .NavBarContainer .NavBarMain .Menu {
+    padding: 0 50px;
+    padding-top: 30px;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 80px;
+    left: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .NavBarContainer .NavBarMain .Menu .NavOnlineOrderButton {
+    width: 100%;
+    font-size: 18px;
+  }
+  .NavBarContainer .NavBarMain .Menu .NavButton {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 18px;
+  }
+  .NavBarContainer .NavBarMain .Menu.active {
+    left: 0;
+  }
 }
 /*# sourceMappingURL=NavBar.css.map */

@@ -5,10 +5,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 281px;
+    min-height: 200px;
+    max-height: 281px;
     overflow: hidden;
     .BannerPic{
-        width: 100%;
+        width: auto;
+        min-height: 280px;
     }
     .BannerDetail{
         position: absolute;
@@ -27,6 +29,7 @@
                 font-weight: 100;
                 color: #000;
                 font-style: normal;
+                cursor: pointer;
             }
             .PageName{
                 color: $color_text_red;

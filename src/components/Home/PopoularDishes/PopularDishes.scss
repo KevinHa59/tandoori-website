@@ -45,7 +45,7 @@
                     color: #565656;
                 }
                 .PopDishItemCost{
-                    color: $color_red;
+                    color: $color_text_red;
                     font-size: 25px;
                     font-weight: bold;
                     margin-top: 10px;
@@ -71,3 +71,20 @@
     font-size: 30px;
     color: $color_text_red;
 }   
+
+
+@media screen and (max-width: 768px){
+    .PopDishContainer{
+        padding: 50px 20px;
+
+        .PopMain{
+            width: 100%;
+            .PopDishPics{
+               display: flex;
+               flex-direction: column;
+            }
+          
+        }
+    }
+    
+}

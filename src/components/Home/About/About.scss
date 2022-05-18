@@ -50,3 +50,17 @@
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    .HomeAboutContainer{
+        padding: 0 25px;
+        .AboutMain{
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    
+    
+}

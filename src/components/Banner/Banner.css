@@ -9,12 +9,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 281px;
+  min-height: 200px;
+  max-height: 281px;
   overflow: hidden;
 }
 
 .MainBannerContainer .BannerPic {
-  width: 100%;
+  width: auto;
+  min-height: 280px;
 }
 
 .MainBannerContainer .BannerDetail {
@@ -41,6 +43,7 @@
   font-weight: 100;
   color: #000;
   font-style: normal;
+  cursor: pointer;
 }
 
 .MainBannerContainer .BannerDetail .Link .PageName {

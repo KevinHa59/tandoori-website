@@ -10,7 +10,7 @@ export default function FamilyPack() {
     }, 500);
   }, []);
   return (
-    <div className="FPackContainer">
+    <div className="FPackContainer  ">
       <div className="AboutMain">
         <div className="Right">
           <img src={imgFPack} alt="" className="FPack" />

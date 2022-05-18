@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Banner.css";
 import formbg from "../../../images/formbg.jpg";
+import { Link } from "react-router-dom";
 
 export default function Banner() {
   let text = ["QUALITY", "TASTY", "DELICIOUS", "HEALTHY"];
@@ -24,7 +25,7 @@ export default function Banner() {
   }, [textId]);
 
   return (
-    <div className="BannerContainer">
+    <div className="BannerContainer ">
       <img src={formbg} alt="" className="BannerImage" />
       <div className="BannerMain">
         <div className="Welcome">Welcome Tandoori Fusion</div>
@@ -35,7 +36,9 @@ export default function Banner() {
           <p>Tandoori Fusion is an Authentic Indian restaurant specializing in Southern and Northern Indian Cuisine.</p>
           <p>Come join us at our Louisville, Kentucky location for a meal you'll never forget.</p>
         </div>
-        <button className="BannerButton">ORDER NOW</button>
+        <a target={"_blank"} href="https://www.clover.com/online-ordering/tandoori-fusion-louisville" className="BannerButton">
+          ORDER NOW
+        </a>
       </div>
     </div>
   );

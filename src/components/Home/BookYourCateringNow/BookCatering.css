@@ -143,6 +143,7 @@
   padding: 0 20px;
   font-size: 16px;
   outline: none;
+  border: 1px solid #c2c2c2;
 }
 
 .BookCateContainer .PopForm .BookCateForm .BookCateInput .InputField .BookCateButton {
@@ -168,5 +169,58 @@
 
 .BGWhite {
   background-color: #fff;
+}
+
+.bdw {
+  border: 1px solid #ff3838;
+}
+
+@media screen and (max-width: 768px) {
+  .BookCateContainer {
+    padding: 50px 20px;
+  }
+  .BookCateContainer .BookCateMain {
+    width: 100%;
+  }
+  .BookCateContainer .PopForm .BookCateForm {
+    width: 100%;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+  }
+  .BookCateContainer .PopForm .BookCateForm .BookCateInput {
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .BookCateContainer .PopForm .BookCateForm .BookCateInput .InputField {
+    padding-left: 0;
+    padding: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .BookCateContainer .PopForm .BookCateForm .BookCateInput .InputField .Text {
+    width: 80%;
+  }
+  .BookCateContainer .PopForm .BookCateForm .BookCateImage {
+    width: auto;
+    height: 500px;
+    -webkit-filter: opacity(0.4);
+            filter: opacity(0.4);
+    z-index: 1;
+  }
 }
 /*# sourceMappingURL=BookCatering.css.map */

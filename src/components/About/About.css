@@ -1,1 +1,119 @@
-/* No CSS *//*# sourceMappingURL=About.css.map */
+.AboutContainer .Section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 0px;
+}
+
+.AboutContainer .Section .SectionMain {
+  width: 1140px;
+  padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.AboutContainer .Section .SectionMain.flexEnd {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.AboutContainer .Section .SectionMain.flexStart {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.AboutContainer .Section .SectionMain .Description {
+  text-align: left;
+  background-color: #f1f1f1;
+  padding: 60px;
+  position: absolute;
+  top: 40px;
+  width: 714px;
+}
+
+.AboutContainer .Section .SectionMain .Description.left {
+  left: 40px;
+}
+
+.AboutContainer .Section .SectionMain .Description.right {
+  right: 40px;
+}
+
+.AboutContainer .Section .SectionMain .Description .Title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.AboutContainer .Section .SectionMain .Description .Detail {
+  font-size: 14px;
+}
+
+.AboutContainer .Section .SectionMain .AboutImage {
+  width: 394px;
+}
+
+.AboutContainer .Section .SectionMain .OwnerImage {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.AboutContainer .Section .SectionMain .OwnerDescription {
+  padding: 0 20px;
+  text-align: left;
+}
+
+.AboutContainer .Section .SectionMain .OwnerDescription .Title {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.AboutContainer .Section .SectionMain .OwnerDescription .Title.red {
+  color: #e02027;
+}
+
+.AboutContainer .Section .SectionMain .OwnerDescription .Detail {
+  font-size: 14px;
+  letter-spacing: 0.7px;
+}
+
+@media screen and (max-width: 768px) {
+  .AboutContainer .Section .SectionMain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 25px;
+  }
+  .AboutContainer .Section .SectionMain .Description {
+    position: relative;
+    background-color: #f3f3f3;
+    width: 100%;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 60px 20px;
+  }
+  .AboutContainer .Section .SectionMain .AboutImage {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=About.css.map */

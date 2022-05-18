@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./About.css";
 import formbg from "../../../images/formbg.jpg";
+import { Link } from "react-router-dom";
 
 export default function About() {
   useEffect(() => {
@@ -10,7 +11,7 @@ export default function About() {
     }, 500);
   }, []);
   return (
-    <div className="HomeAboutContainer">
+    <div className="HomeAboutContainer ">
       <div className="AboutMain">
         <div className="Left">
           <div className="Title">About Tandoori Fusion</div>
@@ -20,7 +21,9 @@ export default function About() {
             Veering Creek located in Louisville, Kentucky. Simply put, we believe people should be able to eat well, eat local, and enjoy
             new flavors as well as familiar ones.
           </div>
-          <button className="AboutButton">READ MORE</button>
+          <Link to={"/about"} className="AboutButton">
+            READ MORE
+          </Link>
         </div>
         <div className="Right">
           <img src={formbg} alt="" />

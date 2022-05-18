@@ -3,14 +3,8 @@ import { BiDish } from "react-icons/bi";
 import "./OpenTable.css";
 
 export default function OpenTable() {
-  useEffect(() => {
-    const container = document.querySelector(".PopDishContainer");
-    setTimeout(() => {
-      container.classList.add("active");
-    }, 500);
-  }, []);
   return (
-    <div className="PopDishContainer BGWhite">
+    <div className="PopDishContainer OpenTable BGWhite active">
       <div className="PopMain">
         <div className="Title">Tandoori Fusion - Open Table</div>
         <div className="IconDesign">

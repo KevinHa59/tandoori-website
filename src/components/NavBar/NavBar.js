@@ -2,16 +2,34 @@ import React, { useEffect, useRef, useState } from "react";
 import "./NavBar.css";
 import logo from "../../images/logo.png";
 import { Link } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function NavBar() {
+  function hamburgerButton() {
+    const Menu = document.querySelector(".Menu");
+    Menu.classList.toggle("active");
+  }
+
+  useEffect(() => {
+    const NavButton = document.querySelectorAll(".NavButton");
+    NavButton.forEach((item) => {
+      item.addEventListener("click", hamburgerButton);
+    });
+  }, []);
+
   return (
     <div className="NavBarContainer">
-      <div className="NavBarMain">
+      <div className="NavBarMain ">
         <div className="Logo">
           <img src={logo} alt="logo" className="logoImage" />
         </div>
-        <div className="Menu">
-          <button className="NavOnlineOrderButton">ORDER ONLINE</button>
+        <div className="HamButton" onClick={() => hamburgerButton()}>
+          <GiHamburgerMenu />
+        </div>
+        <div className="Menu ">
+          <a target={"_blank"} href="https://www.clover.com/online-ordering/tandoori-fusion-louisville" className="NavOnlineOrderButton">
+            ORDER ONLINE
+          </a>
           <Link to={"/"} className="NavButton">
             HOME
           </Link>

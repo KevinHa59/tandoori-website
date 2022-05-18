@@ -1,0 +1,97 @@
+@import "../../styles/variable";
+
+.AboutContainer{
+    
+    .Section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0px;
+        .SectionMain{
+            width: $width_main;
+            padding: 0 50px;
+            display: flex;
+            position: relative;
+            
+            &.flexEnd{
+                justify-content: flex-end;
+            }
+            &.flexStart{
+                justify-content: flex-start;
+            }
+            .Description{
+                text-align: left;
+                background-color: #f1f1f1;
+                padding: 60px;
+                position: absolute;
+                
+                top: 40px;
+                width: 714px;
+                &.left{
+                    left: 40px;
+                }
+                &.right{
+                    right: 40px;
+                }
+                .Title{
+                    font-size: 28px;
+                    margin-bottom: 20px;
+                    
+                }
+                .Detail{
+                    font-size: 14px;
+                }
+            }
+            .AboutImage{
+                width: 394px;
+            }
+            .OwnerImage{
+                height: fit-content;
+            }
+            .OwnerDescription{
+                padding: 0 20px;
+                text-align: left;
+                .Title{
+                    margin-bottom: 15px;
+                    font-weight: bold;
+                    font-size: 18px;
+                    
+                    &.red{
+                        color: $color_text_red;
+                    }
+                }
+                .Detail{
+                    font-size: 14px;
+                    letter-spacing: 0.7px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .AboutContainer{
+        .Section{
+
+            .SectionMain{
+                display: flex;
+                flex-direction: column;
+                padding: 0 25px;
+                .Description{
+                    position: relative;
+                    background-color: #f3f3f3;
+                    width: 100%;
+                    left: 0 !important;
+                    right: 0 !important;
+                    bottom: 0;
+                    height: max-content;
+                    padding: 60px 20px;
+                }
+                .AboutImage{
+                    width: 100%;
+                    
+                }
+            }
+        }
+    }
+}

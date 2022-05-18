@@ -20,7 +20,6 @@ function App() {
         </a>
         <section id="top" />
         <NavBar />
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

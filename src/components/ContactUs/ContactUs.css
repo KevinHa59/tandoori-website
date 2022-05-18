@@ -1,1 +1,111 @@
-/* No CSS *//*# sourceMappingURL=ContactUs.css.map */
+.ContactUsContainer .Section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 0;
+}
+
+.ContactUsContainer .Section .SectionMain {
+  width: 1140px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ContactUsContainer .Section .SectionMain .Item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ContactUsContainer .Section .SectionMain .Item p {
+  line-height: 0.7;
+}
+
+.ContactUsContainer .Section .SectionMain .Item .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 25px;
+  border: 3px dashed #565656;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.ContactUsContainer .Section .SectionMain .Item .icon:hover {
+  color: #e02027;
+}
+
+.ContactUsContainer .Section .ContactBG {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+.ContactUsContainer .Section .MapEmbedContainer {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+}
+
+.ContactUsContainer .Section .MapEmbedContainer .MapEmbed {
+  width: 100%;
+  border: none;
+}
+
+.ContactUsContainer .Section.ContactSize {
+  position: relative;
+  height: 900px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .ContactUsContainer .Section {
+    padding: 50px 0;
+  }
+  .ContactUsContainer .Section .SectionMain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+}
+/*# sourceMappingURL=ContactUs.css.map */
